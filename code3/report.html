@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <div>
+            <h1>www Project3</h1>
+            <h2>Report</h3>
+            <p>
+            <p>
+                The basic functionality of the e-basket application had to be done </br>
+                using jsp java beans without scriplet.</br>
+                
+                The interface is a table where the user has to enter the desired quantity</br> 
+                of 3 items,coffe,sugar and water in order to get the total amount of the price</br>
+                to be paid.</br>
+                
+                The whole implementation of the application is done in a jsp file</br>
+                using an html form where the major jsp javabean commands are embedded.</br></br>
+                </p>
+                <p>
+                A JavaBean is just a Java class that adheres to the following rules,</br>
+
+                it is a public class</br>
+                it has a public constructor with no arguments</br>
+                it has public get and set methods to read and write to properties.</br></br>
+                </p>
+                
+                <p>
+                So,for my e-basket i created a two java classes.</br></br>
+                One that has setters and getters method for each of the three</br>
+                user's choices for the quantity.</br></br>
+                And the second that sets the property with the value of the user's</br>
+                input for the quantity multiplied by the price,and also has methods to </br>
+                get each result and also a method to get the total.</br></br>
+                </p>
+                
+                <p>
+                
+                Inside the jsp file i declare and initialize a bean attribute for each</br>
+                class.I set the property for each one of the quantity-inputs.</br>
+                
+                </p>
+                
+                So inside my form where i want to have the total result for each item</br>
+                i do getProperty with name the name of the second class,and i do the same</br>
+                for the whole Total.</br></br>
+                
+                In order for the quantity that the user has entered to be shown after the user</br>
+                has submitted the form,i put getProperty with name the name of the first class,</br>
+                in the value of the < input .... /> that every form has.</br>
+                ( < input type="text" ....
+                                   value="< jsp:getProperty name="Initialbasket" property="qsugar" />"/> </br></br>
+                
+               I haven't managed to use cookies cause i couldn't set them without using </br>
+               scriplet.</br> </br>
+               I also parse the the price values from an xml file.</br>
+               For the parsing i read from a pdf that i found in web in the </br>
+               in 
+               <a href="http://java.sun.com/developer/Books/javaserverpages/ProJSP/Chap12.pdf" target="_blank">HERE</a>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            
+        </div>
+    </body>
+</html>
